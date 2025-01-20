@@ -1,0 +1,91 @@
+/* Responsif dan Animasi */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.header .btn-primary {
+    background: #FFC107;
+    color: #000;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.header .btn-primary:hover {
+    background: #FFD54F;
+}
+
+.navbar {
+    background: #0056b3;
+    padding: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    margin: 0 10px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.donasi-form, .kontak-form {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.donasi-form label, .kontak-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.donasi-form input, .kontak-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .program-item {
+        margin-bottom: 20px;
+    }
+}
